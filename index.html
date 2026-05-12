@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Verval — Embalaje Industrial</title>
+  <meta name="description" content="Catálogo de productos de embalaje industrial Empresas Verval. Bolsas, rollos, bandejas, guantes y más. Cotiza por WhatsApp.">
+  <meta property="og:title" content="Catálogo Verval — Embalaje Industrial">
+  <meta property="og:description" content="Explora nuestro catálogo de embalaje industrial. Cotiza directo por WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pine: #0f2e1f;
+      --pine-light: #1a4a32;
+      --kraft: #c8a882;
+      --kraft-light: #ddc4a8;
+      --cream: #f5f1ea;
+      --rust: #c85a3a;
+      --charcoal: #1a1a1a;
+      --white: #ffffff;
+      --shadow: 0 2px 12px rgba(15,46,31,.08);
+      --shadow-hover: 0 8px 30px rgba(15,46,31,.15);
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Manrope', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* HEADER */
+    .header {
+      background: var(--pine);
+      color: var(--cream);
+      padding: 1.25rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,.2);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      color: var(--white);
+    }
+    .brand-sub {
+      font-size: .75rem;
+      color: var(--kraft);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .header-actions {
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+    }
+    .btn-wa-header {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: #25d366;
+      color: var(--white);
+      padding: .6rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .85rem;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-wa-header:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(37,211,102,.4);
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--pine);
+      color: var(--cream);
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      margin-bottom: .75rem;
+    }
+    .hero h1 em {
+      color: var(--kraft);
+      font-style: italic;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      max-width: 550px;
+      margin: 0 auto 1.5rem;
+      opacity: .85;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--kraft);
+    }
+    .stat-label {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      opacity: .7;
+    }
+
+    /* FILTERS */
+    .filters {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem .5rem;
+    }
+    .search-box {
+      width: 100%;
+      padding: .85rem 1.2rem .85rem 3rem;
+      border: 2px solid var(--kraft-light);
+      border-radius: 50px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: var(--white);
+      transition: border-color .2s;
+      outline: none;
+    }
+    .search-box:focus {
+      border-color: var(--pine);
+    }
+    .search-wrap {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .search-icon {
+      position: absolute;
+      left: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      opacity: .4;
+      pointer-events: none;
+    }
+    .filter-tags {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+    .filter-tag {
+      padding: .45rem 1rem;
+      border-radius: 50px;
+      border: 1.5px solid var(--kraft);
+      background: transparent;
+      font-family: inherit;
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--pine);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .filter-tag:hover, .filter-tag.active {
+      background: var(--pine);
+      border-color: var(--pine);
+      color: var(--white);
+    }
+
+    /* PRODUCT GRID */
+    .catalog {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 3rem;
+    }
+    .results-count {
+      font-size: .85rem;
+      color: var(--pine-light);
+      margin-bottom: 1rem;
+      opacity: .7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+
+    /* PRODUCT CARD */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform .25s, box-shadow .25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card-cat {
+      background: var(--pine);
+      color: var(--kraft);
+      padding: .5rem 1.25rem;
+      font-size: .7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+    .card-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--pine);
+      margin-bottom: .5rem;
+    }
+    .card-desc {
+      font-size: .88rem;
+      color: #555;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin-bottom: 1rem;
+    }
+    .meta-tag {
+      font-size: .72rem;
+      background: var(--cream);
+      color: var(--pine-light);
+      padding: .25rem .6rem;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      border-top: 1px solid #eee;
+      gap: .75rem;
+    }
+    .card-price {
+      font-family: 'Fraunces', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--pine);
+    }
+    .card-price small {
+      font-family: 'Manrope', sans-serif;
+      font-size: .7rem;
+      font-weight: 400;
+      color: #888;
+    }
+    .card-unit {
+      font-size: .75rem;
+      color: #888;
+    }
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: #25d366;
+      color: var(--white);
+      padding: .55rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .8rem;
+      transition: transform .2s, box-shadow .2s;
+      white-space: nowrap;
+    }
+    .btn-wa:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(37,211,102,.35);
+    }
+
+    /* EMPTY STATE */
+    .empty {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: #888;
+    }
+    .empty-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--pine);
+      color: var(--cream);
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--kraft);
+      text-decoration: none;
+      font-size: .85rem;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy {
+      font-size: .75rem;
+      opacity: .5;
+    }
+
+    /* WHATSAPP FLOAT */
+    .wa-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      transition: transform .2s;
+      z-index: 99;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .header-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero { padding: 2rem 1rem 1.5rem; }
+      .hero-stats { gap: 1.2rem; }
+      .btn-wa-header span.desk { display: none; }
+    }
+
+    /* ANIMATIONS */
+    .card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp .4s ease forwards;
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-name">Verval</span>
+        <span class="brand-sub">Embalaje Industrial</span>
+      </div>
+      <div class="header-actions">
+        <a href="https://wa.me/56933853926?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20productos%20del%20cat%C3%A1logo." class="btn-wa-header" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          <span class="desk">Cotizar</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Catálogo de <em>Productos</em></h1>
+    <p>Soluciones de embalaje industrial para tu negocio. Cotiza directo por WhatsApp.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">25+</div>
+        <div class="stat-label">Productos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Categorías</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24h</div>
+        <div class="stat-label">Respuesta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" class="search-box" placeholder="Buscar producto..." id="search">
+    </div>
+    <div class="filter-tags" id="filterTags"></div>
+  </div>
+
+  <!-- CATALOG -->
+  <main class="catalog">
+    <div class="results-count" id="resultsCount"></div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none">
+      <div class="empty-icon">&#128722;</div>
+      <p>No se encontraron productos con ese filtro.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="mailto:ventas@empresasverval.cl">ventas@empresasverval.cl</a>
+      <a href="https://wa.me/56933853926" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://empresasverval.cl" target="_blank" rel="noopener">empresasverval.cl</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Empresas Verval. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/56933853926?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20productos%20del%20cat%C3%A1logo." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+  </a>
+
+  <script>
+    const WA = '56933853926';
+
+    fetch('catalogo.json')
+      .then(r => r.json())
+      .then(data => init(data.productos))
+      .catch(() => {
+        document.getElementById('grid').innerHTML = '<p style="text-align:center;padding:2rem;color:#888;">Error cargando el catálogo.</p>';
+      });
+
+    function init(productos) {
+      const categories = [...new Set(productos.map(p => p.categoria))];
+      renderFilters(categories);
+
+      const searchEl = document.getElementById('search');
+      let activeFilter = null;
+
+      function render() {
+        const q = searchEl.value.toLowerCase().trim();
+        const filtered = productos.filter(p => {
+          const matchCat = !activeFilter || p.categoria === activeFilter;
+          const matchSearch = !q ||
+            p.nombre.toLowerCase().includes(q) ||
+            p.descripcion.toLowerCase().includes(q) ||
+            p.categoria.toLowerCase().includes(q) ||
+            p.tags.some(t => t.toLowerCase().includes(q));
+          return matchCat && matchSearch;
+        });
+        renderGrid(filtered);
+      }
+
+      searchEl.addEventListener('input', render);
+
+      document.getElementById('filterTags').addEventListener('click', e => {
+        const tag = e.target.closest('.filter-tag');
+        if (!tag) return;
+        const cat = tag.dataset.cat;
+        if (activeFilter === cat) {
+          activeFilter = null;
+          tag.classList.remove('active');
+        } else {
+          activeFilter = cat;
+          document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+          tag.classList.add('active');
+        }
+        render();
+      });
+
+      render();
+    }
+
+    function renderFilters(categories) {
+      const container = document.getElementById('filterTags');
+      container.innerHTML = categories.map(cat =>
+        `<button class="filter-tag" data-cat="${cat}">${cat}</button>`
+      ).join('');
+    }
+
+    function renderGrid(productos) {
+      const grid = document.getElementById('grid');
+      const empty = document.getElementById('empty');
+      const count = document.getElementById('resultsCount');
+
+      if (productos.length === 0) {
+        grid.innerHTML = '';
+        empty.style.display = 'block';
+        count.textContent = '';
+        return;
+      }
+
+      empty.style.display = 'none';
+      count.textContent = `${productos.length} producto${productos.length !== 1 ? 's' : ''}`;
+
+      grid.innerHTML = productos.map((p, i) => {
+        const precio = p.precio
+          ? `<span class="card-price">$${p.precio.toLocaleString('es-CL')} <small>/${p.unidad}</small></span>`
+          : `<span class="card-price" style="font-size:.95rem;color:var(--rust);">Consultar precio</span>`;
+
+        const unidades = p.unidades_por_caja
+          ? `<span class="card-unit">${p.unidades_por_caja} ${p.unidad === 'kilo' ? 'kg mín.' : 'und/caja'}</span>`
+          : '';
+
+        const waMsg = encodeURIComponent(`Hola, me interesa cotizar: ${p.nombre}. ¿Podrían darme información de precios y disponibilidad?`);
+
+        return `
+          <article class="card" style="animation-delay:${i * .05}s">
+            <div class="card-cat">${p.categoria}</div>
+            <div class="card-body">
+              <h3 class="card-name">${p.nombre}</h3>
+              <p class="card-desc">${p.descripcion}</p>
+              <div class="card-meta">
+                ${p.tags.map(t => `<span class="meta-tag">${t}</span>`).join('')}
+              </div>
+            </div>
+            <div class="card-footer">
+              <div>
+                ${precio}
+                ${unidades ? `<div>${unidades}</div>` : ''}
+              </div>
+              <a href="https://wa.me/${WA}?text=${waMsg}" class="btn-wa" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+                Cotizar
+              </a>
+            </div>
+          </article>`;
+      }).join('');
+    }
+  </script>
+
+</body>
+</html>
