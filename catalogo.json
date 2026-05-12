@@ -1,0 +1,279 @@
+{
+  "productos": [
+    {
+      "id": "001",
+      "nombre": "Rollo Paletizar",
+      "categoria": "Embalaje",
+      "descripcion": "Es una película estirable de alta transparencia fabricada a base de polietileno, es ideal para paletizar de forma manual por su alto rendimiento y economía en el proceso de embalaje.",
+      "precio": 3690,
+      "unidad": "unidad",
+      "unidades_por_caja": 6,
+      "foto": "rollo-paletizar.jpg",
+      "tags": ["paletizar", "polietileno", "manual", "estirable"]
+    },
+    {
+      "id": "002",
+      "nombre": "Cinta Embalaje",
+      "categoria": "Embalaje",
+      "descripcion": "Las cintas de embalaje son consumibles adhesivos imprescindibles para la protección y la identificación de los productos que van a ser enviados a los distribuidores o a los clientes.",
+      "precio": 990,
+      "unidad": "unidad",
+      "unidades_por_caja": 72,
+      "foto": "cinta-embalaje.jpg",
+      "tags": ["cinta", "adhesivo", "embalaje", "envío"]
+    },
+    {
+      "id": "003",
+      "nombre": "Guantes Nitrilo",
+      "categoria": "Protección",
+      "descripcion": "Son comunes en la cocina y la manipulación de alimentos debido a su resistencia a la contaminación cruzada y a grasas y aceites. Distintas tallas: S, M, L.",
+      "precio": 3190,
+      "unidad": "unidad",
+      "unidades_por_caja": 20,
+      "foto": "guantes-nitrilo.jpg",
+      "tags": ["guantes", "nitrilo", "alimentos", "protección"]
+    },
+    {
+      "id": "004",
+      "nombre": "Film Alusa 30x300",
+      "categoria": "Embalaje",
+      "descripcion": "Se utiliza para proteger y preservar productos sensibles a la luz y humedad.",
+      "precio": 5000,
+      "unidad": "unidad",
+      "unidades_por_caja": 1,
+      "foto": "film-alusa.jpg",
+      "tags": ["film", "alusa", "protección", "humedad"]
+    },
+    {
+      "id": "005",
+      "nombre": "Rollo Pullpack",
+      "categoria": "Embalaje",
+      "descripcion": "El Rollo Pullpack es fácil de utilizar, ya que tienes que tomar una bolsa del rollo, abrirla y envasar el producto.",
+      "precio": 4990,
+      "unidad": "unidad",
+      "unidades_por_caja": 4,
+      "foto": "rollo-pullpack.jpg",
+      "tags": ["pullpack", "rollo", "bolsa", "envasar"]
+    },
+    {
+      "id": "006",
+      "nombre": "Bolsa Papel 800",
+      "categoria": "Bolsas de Papel",
+      "descripcion": "El cartón Kraft es un tipo de cartón resistente y versátil, se utiliza principalmente en la industria del packaging, este papel en especial es muy utilizado en panaderías.",
+      "precio": 48,
+      "unidad": "unidad",
+      "unidades_por_caja": 500,
+      "foto": "bolsa-papel-800.jpg",
+      "tags": ["bolsa", "papel", "kraft", "panadería"]
+    },
+    {
+      "id": "007",
+      "nombre": "Bolsa Papel 700",
+      "categoria": "Bolsas de Papel",
+      "descripcion": "El cartón Kraft es un tipo de cartón resistente y versátil, se utiliza principalmente en la industria del packaging, este papel en especial es muy utilizado en panaderías.",
+      "precio": 44,
+      "unidad": "unidad",
+      "unidades_por_caja": 500,
+      "foto": "bolsa-papel-700.jpg",
+      "tags": ["bolsa", "papel", "kraft", "panadería"]
+    },
+    {
+      "id": "008",
+      "nombre": "Bolsa Papel 500",
+      "categoria": "Bolsas de Papel",
+      "descripcion": "El cartón Kraft es un tipo de cartón resistente y versátil, se utiliza principalmente en la industria del packaging, este papel en especial es muy utilizado en panaderías.",
+      "precio": 28,
+      "unidad": "unidad",
+      "unidades_por_caja": 500,
+      "foto": "bolsa-papel-500.jpg",
+      "tags": ["bolsa", "papel", "kraft", "panadería"]
+    },
+    {
+      "id": "009",
+      "nombre": "Bolsa Papel 200",
+      "categoria": "Bolsas de Papel",
+      "descripcion": "El cartón Kraft es un tipo de cartón resistente y versátil, se utiliza principalmente en la industria del packaging, este papel en especial es muy utilizado en panaderías.",
+      "precio": 14,
+      "unidad": "unidad",
+      "unidades_por_caja": 1000,
+      "foto": "bolsa-papel-200.jpg",
+      "tags": ["bolsa", "papel", "kraft", "panadería"]
+    },
+    {
+      "id": "010",
+      "nombre": "Bolsa Papel 100",
+      "categoria": "Bolsas de Papel",
+      "descripcion": "Este papel en especial es muy utilizado en panaderías y pastelerías.",
+      "precio": 10,
+      "unidad": "unidad",
+      "unidades_por_caja": 1000,
+      "foto": "bolsa-papel-100.jpg",
+      "tags": ["bolsa", "papel", "kraft", "panadería", "pastelería"]
+    },
+    {
+      "id": "011",
+      "nombre": "Rollo Papel Kraft 57 cm",
+      "categoria": "Papel Kraft",
+      "descripcion": "El papel Kraft es utilizado ampliamente para embalar productos como alimentos húmedos, lácteos, productos congelados, mantequilla, zumos y helados entre otros. Debido a su gran resistencia podemos encontrarlo formando parte de bandejas, vasos y platos.",
+      "precio": 10300,
+      "unidad": "unidad",
+      "unidades_por_caja": 1,
+      "foto": "rollo-papel-kraft-57.jpg",
+      "tags": ["rollo", "papel", "kraft", "alimentos", "embalar"]
+    },
+    {
+      "id": "012",
+      "nombre": "Rollo Papel Kraft 40 cm",
+      "categoria": "Papel Kraft",
+      "descripcion": "El papel Kraft es utilizado ampliamente para embalar productos como alimentos húmedos, lácteos, productos congelados, mantequilla, zumos y helados entre otros.",
+      "precio": 7200,
+      "unidad": "unidad",
+      "unidades_por_caja": 1,
+      "foto": "rollo-papel-kraft-40.jpg",
+      "tags": ["rollo", "papel", "kraft", "alimentos", "embalar"]
+    },
+    {
+      "id": "013",
+      "nombre": "Rollo Prepicado",
+      "categoria": "Embalaje",
+      "descripcion": "Estos rollos vienen listos para ser desplegados y aplicados directamente sobre los productos que se desean proteger y asegurar. Medidas: 20x30, 25x35, 30x40, 35x50, 40x60, 50x70, 60x95.",
+      "precio": 2890,
+      "unidad": "kilo",
+      "unidades_por_caja": null,
+      "foto": "rollo-prepicado.jpg",
+      "tags": ["rollo", "prepicado", "protección", "embalaje"]
+    },
+    {
+      "id": "014",
+      "nombre": "Lámina Prepicada",
+      "categoria": "Embalaje",
+      "descripcion": "Es una bolsa que facilita el embalaje en procesos semiautomáticos, obteniendo rapidez y control del producto. Medidas: 30x20, 120x120.",
+      "precio": 2890,
+      "unidad": "kilo",
+      "unidades_por_caja": null,
+      "foto": "lamina-prepicada.jpg",
+      "tags": ["lámina", "prepicada", "semiautomático", "embalaje"]
+    },
+    {
+      "id": "015",
+      "nombre": "Bolsa Camiseta 40x50",
+      "categoria": "Bolsas Plásticas",
+      "descripcion": "La bolsa camiseta de 40x50 cm es un tipo de bolsa que se utiliza para empaquetar y almacenar productos.",
+      "precio": 16,
+      "unidad": "unidad",
+      "unidades_por_caja": 100,
+      "foto": "bolsa-camiseta-40x50.jpg",
+      "tags": ["bolsa", "camiseta", "plástica", "empaquetar"]
+    },
+    {
+      "id": "016",
+      "nombre": "Bandeja de Aluminio",
+      "categoria": "Bandejas",
+      "descripcion": "Bandejas de aluminio en diversas medidas. Medidas: C5, C8, C10, C18, C20, C25, C30, C40.",
+      "precio": null,
+      "unidad": "unidad",
+      "unidades_por_caja": null,
+      "foto": "bandeja-aluminio.jpg",
+      "tags": ["bandeja", "aluminio", "cocina", "envase"]
+    },
+    {
+      "id": "017",
+      "nombre": "Bandeja Plástica de Sushi 3 Rolls",
+      "categoria": "Bandejas",
+      "descripcion": "La bandeja de sushi de plástico es un utensilio utilizado para servir y presentar sushi de manera práctica y elegante. Estas bandejas están diseñadas para realzar la presentación de los platos japoneses, como los rollos de sushi.",
+      "precio": 150,
+      "unidad": "unidad",
+      "unidades_por_caja": 140,
+      "foto": "bandeja-sushi-3-rolls.jpg",
+      "tags": ["bandeja", "sushi", "plástica", "presentación"]
+    },
+    {
+      "id": "018",
+      "nombre": "Bandeja Plástica de Sushi 2 Rolls",
+      "categoria": "Bandejas",
+      "descripcion": "La bandeja de sushi de plástico es un utensilio utilizado para servir y presentar sushi de manera práctica y elegante. Estas bandejas están diseñadas para realzar la presentación de los platos japoneses, como los rollos de sushi.",
+      "precio": 110,
+      "unidad": "unidad",
+      "unidades_por_caja": 200,
+      "foto": "bandeja-sushi-2-rolls.jpg",
+      "tags": ["bandeja", "sushi", "plástica", "presentación"]
+    },
+    {
+      "id": "019",
+      "nombre": "Bolsa para Pollo",
+      "categoria": "Bolsas Plásticas",
+      "descripcion": "Esta bolsa es muy utilizada para productos calientes como pollo y papas fritas.",
+      "precio": 190,
+      "unidad": "unidad",
+      "unidades_por_caja": 100,
+      "foto": "bolsa-pollo.jpg",
+      "tags": ["bolsa", "pollo", "caliente", "alimentos"]
+    },
+    {
+      "id": "020",
+      "nombre": "Bolsa Vacío",
+      "categoria": "Bolsas Plásticas",
+      "descripcion": "Las bolsas para envasar al vacío son un tipo de envase que permite extraer el aire de su interior, creando un entorno sellado que protege los productos alimenticios y otros objetos de la exposición al oxígeno y la humedad. Medidas: 14x21, 15x20, 15x30, 20x30, 30x40, 40x60.",
+      "precio": null,
+      "unidad": "unidad",
+      "unidades_por_caja": null,
+      "foto": "bolsa-vacio.jpg",
+      "tags": ["bolsa", "vacío", "sellado", "alimentos", "conservación"]
+    },
+    {
+      "id": "021",
+      "nombre": "Bolsa de Aseo 110x120 T2",
+      "categoria": "Bolsas de Aseo",
+      "descripcion": "Para bolsas de basura T2, se refiere a un tipo específico de bolsa de basura que se utiliza comúnmente en entornos profesionales, como comedores, colegios y restaurantes. Estas bolsas son más grandes que las domésticas y están diseñadas para manejar una mayor cantidad de residuos.",
+      "precio": 250,
+      "unidad": "unidad",
+      "unidades_por_caja": 200,
+      "foto": "bolsa-aseo-110x120.jpg",
+      "tags": ["bolsa", "aseo", "basura", "profesional", "T2"]
+    },
+    {
+      "id": "022",
+      "nombre": "Bolsa Aseo 70x90",
+      "categoria": "Bolsas de Aseo",
+      "descripcion": "Estas bolsas son ideales para usos en diversas industrias, especialmente donde se requiere separación e inocuidad en los empaques.",
+      "precio": 1000,
+      "unidad": "paquete",
+      "unidades_por_caja": 10,
+      "foto": "bolsa-aseo-70x90.jpg",
+      "tags": ["bolsa", "aseo", "industria", "inocuidad"]
+    },
+    {
+      "id": "023",
+      "nombre": "Bolsa Aseo 50x70",
+      "categoria": "Bolsas de Aseo",
+      "descripcion": "Estas bolsas son ideales para usos en diversas industrias, especialmente donde se requiere separación e inocuidad en los empaques.",
+      "precio": 550,
+      "unidad": "paquete",
+      "unidades_por_caja": 10,
+      "foto": "bolsa-aseo-50x70.jpg",
+      "tags": ["bolsa", "aseo", "industria", "inocuidad"]
+    },
+    {
+      "id": "024",
+      "nombre": "Bolsa Aseo 80x110",
+      "categoria": "Bolsas de Aseo",
+      "descripcion": "Estas bolsas son ideales para usos en diversas industrias, especialmente donde se requiere separación e inocuidad en los empaques.",
+      "precio": 110,
+      "unidad": "unidad",
+      "unidades_por_caja": 100,
+      "foto": "bolsa-aseo-80x110.jpg",
+      "tags": ["bolsa", "aseo", "industria", "inocuidad"]
+    },
+    {
+      "id": "025",
+      "nombre": "Bolsa Aseo 90x110",
+      "categoria": "Bolsas de Aseo",
+      "descripcion": "Estas bolsas son ideales para usos en diversas industrias, especialmente donde se requiere separación e inocuidad en los empaques.",
+      "precio": 200,
+      "unidad": "unidad",
+      "unidades_por_caja": 50,
+      "foto": "bolsa-aseo-90x110.jpg",
+      "tags": ["bolsa", "aseo", "industria", "inocuidad"]
+    }
+  ]
+}
