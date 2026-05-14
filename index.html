@@ -236,6 +236,32 @@
       text-transform: uppercase;
       letter-spacing: .1em;
     }
+    .card-img-wrap {
+      aspect-ratio: 1 / 1;
+      background:
+        radial-gradient(ellipse at 50% 95%, rgba(15,46,31,.06), transparent 60%),
+        linear-gradient(180deg, #fdfcf9 0%, #f7f3ec 100%);
+      overflow: hidden;
+      position: relative;
+      border-bottom: 1px solid rgba(15,46,31,.06);
+    }
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      padding: 1.25rem;
+      transition: transform .35s ease;
+      mix-blend-mode: multiply;
+    }
+    .card:hover .card-img {
+      transform: scale(1.06);
+    }
+    .card-img.placeholder {
+      opacity: .3;
+      padding: 3rem;
+      mix-blend-mode: normal;
+    }
     .card-body {
       padding: 1.25rem;
       flex: 1;
@@ -552,9 +578,16 @@
 
         const waMsg = encodeURIComponent(`Hola, me interesa cotizar: ${p.nombre}. ¿Podrían darme información de precios y disponibilidad?`);
 
+        const imgEdit = `img/editadas/${p.foto}`;
+        const imgOrig = `img/originales/${p.foto}`;
+        const fallback = `this.onerror=null;this.src='${imgOrig}';this.onerror=()=>{this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%230f2e1f%22><path d=%22M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z%22/></svg>';};`;
+
         return `
           <article class="card" style="animation-delay:${i * .05}s">
             <div class="card-cat">${p.categoria}</div>
+            <div class="card-img-wrap">
+              <img class="card-img" src="${imgEdit}" alt="${p.nombre}" loading="lazy" onerror="${fallback}">
+            </div>
             <div class="card-body">
               <h3 class="card-name">${p.nombre}</h3>
               <p class="card-desc">${p.descripcion}</p>

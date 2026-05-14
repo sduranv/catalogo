@@ -8,7 +8,7 @@
       "precio": 3690,
       "unidad": "unidad",
       "unidades_por_caja": 6,
-      "foto": "rollo-paletizar.jpg",
+      "foto": "rollo-paletizar.png",
       "tags": ["paletizar", "polietileno", "manual", "estirable"]
     },
     {
@@ -19,7 +19,7 @@
       "precio": 990,
       "unidad": "unidad",
       "unidades_por_caja": 72,
-      "foto": "cinta-embalaje.jpg",
+      "foto": "cinta-embalaje.png",
       "tags": ["cinta", "adhesivo", "embalaje", "envío"]
     },
     {
@@ -52,7 +52,7 @@
       "precio": 4990,
       "unidad": "unidad",
       "unidades_por_caja": 4,
-      "foto": "rollo-pullpack.jpg",
+      "foto": "rollo-pullpack.png",
       "tags": ["pullpack", "rollo", "bolsa", "envasar"]
     },
     {
@@ -63,7 +63,7 @@
       "precio": 48,
       "unidad": "unidad",
       "unidades_por_caja": 500,
-      "foto": "bolsa-papel-800.jpg",
+      "foto": "bolsa-papel-800.png",
       "tags": ["bolsa", "papel", "kraft", "panadería"]
     },
     {
@@ -74,7 +74,7 @@
       "precio": 44,
       "unidad": "unidad",
       "unidades_por_caja": 500,
-      "foto": "bolsa-papel-700.jpg",
+      "foto": "bolsa-papel-700.png",
       "tags": ["bolsa", "papel", "kraft", "panadería"]
     },
     {
@@ -85,7 +85,7 @@
       "precio": 28,
       "unidad": "unidad",
       "unidades_por_caja": 500,
-      "foto": "bolsa-papel-500.jpg",
+      "foto": "bolsa-papel-500.png",
       "tags": ["bolsa", "papel", "kraft", "panadería"]
     },
     {
@@ -96,7 +96,7 @@
       "precio": 14,
       "unidad": "unidad",
       "unidades_por_caja": 1000,
-      "foto": "bolsa-papel-200.jpg",
+      "foto": "bolsa-papel-200.png",
       "tags": ["bolsa", "papel", "kraft", "panadería"]
     },
     {
@@ -107,7 +107,7 @@
       "precio": 10,
       "unidad": "unidad",
       "unidades_por_caja": 1000,
-      "foto": "bolsa-papel-100.jpg",
+      "foto": "bolsa-papel-100.png",
       "tags": ["bolsa", "papel", "kraft", "panadería", "pastelería"]
     },
     {
@@ -118,7 +118,7 @@
       "precio": 10300,
       "unidad": "unidad",
       "unidades_por_caja": 1,
-      "foto": "rollo-papel-kraft-57.jpg",
+      "foto": "rollo-papel-kraft-57.png",
       "tags": ["rollo", "papel", "kraft", "alimentos", "embalar"]
     },
     {
@@ -129,7 +129,7 @@
       "precio": 7200,
       "unidad": "unidad",
       "unidades_por_caja": 1,
-      "foto": "rollo-papel-kraft-40.jpg",
+      "foto": "rollo-papel-kraft-40.png",
       "tags": ["rollo", "papel", "kraft", "alimentos", "embalar"]
     },
     {
@@ -140,7 +140,7 @@
       "precio": 2890,
       "unidad": "kilo",
       "unidades_por_caja": null,
-      "foto": "rollo-prepicado.jpg",
+      "foto": "rollo-prepicado.png",
       "tags": ["rollo", "prepicado", "protección", "embalaje"]
     },
     {
@@ -151,7 +151,7 @@
       "precio": 2890,
       "unidad": "kilo",
       "unidades_por_caja": null,
-      "foto": "lamina-prepicada.jpg",
+      "foto": "lamina-prepicada.png",
       "tags": ["lámina", "prepicada", "semiautomático", "embalaje"]
     },
     {
@@ -162,7 +162,7 @@
       "precio": 16,
       "unidad": "unidad",
       "unidades_por_caja": 100,
-      "foto": "bolsa-camiseta-40x50.jpg",
+      "foto": "bolsa-camiseta-40x50.png",
       "tags": ["bolsa", "camiseta", "plástica", "empaquetar"]
     },
     {
@@ -173,7 +173,7 @@
       "precio": null,
       "unidad": "unidad",
       "unidades_por_caja": null,
-      "foto": "bandeja-aluminio.jpg",
+      "foto": "bandeja-aluminio.png",
       "tags": ["bandeja", "aluminio", "cocina", "envase"]
     },
     {
@@ -184,7 +184,7 @@
       "precio": 150,
       "unidad": "unidad",
       "unidades_por_caja": 140,
-      "foto": "bandeja-sushi-3-rolls.jpg",
+      "foto": "bandeja-sushi-3-rolls.png",
       "tags": ["bandeja", "sushi", "plástica", "presentación"]
     },
     {
@@ -195,7 +195,7 @@
       "precio": 110,
       "unidad": "unidad",
       "unidades_por_caja": 200,
-      "foto": "bandeja-sushi-2-rolls.jpg",
+      "foto": "bandeja-sushi-2-rolls.png",
       "tags": ["bandeja", "sushi", "plástica", "presentación"]
     },
     {
@@ -206,7 +206,7 @@
       "precio": 190,
       "unidad": "unidad",
       "unidades_por_caja": 100,
-      "foto": "bolsa-pollo.jpg",
+      "foto": "bolsa-pollo.png",
       "tags": ["bolsa", "pollo", "caliente", "alimentos"]
     },
     {
@@ -217,7 +217,7 @@
       "precio": null,
       "unidad": "unidad",
       "unidades_por_caja": null,
-      "foto": "bolsa-vacio.jpg",
+      "foto": "bolsa-vacio.png",
       "tags": ["bolsa", "vacío", "sellado", "alimentos", "conservación"]
     },
     {
@@ -228,7 +228,7 @@
       "precio": 250,
       "unidad": "unidad",
       "unidades_por_caja": 200,
-      "foto": "bolsa-aseo-110x120.jpg",
+      "foto": "bolsa-aseo-110x120.png",
       "tags": ["bolsa", "aseo", "basura", "profesional", "T2"]
     },
     {
@@ -239,7 +239,7 @@
       "precio": 1000,
       "unidad": "paquete",
       "unidades_por_caja": 10,
-      "foto": "bolsa-aseo-70x90.jpg",
+      "foto": "bolsa-aseo-70x90.png",
       "tags": ["bolsa", "aseo", "industria", "inocuidad"]
     },
     {
@@ -250,7 +250,7 @@
       "precio": 550,
       "unidad": "paquete",
       "unidades_por_caja": 10,
-      "foto": "bolsa-aseo-50x70.jpg",
+      "foto": "bolsa-aseo-50x70.png",
       "tags": ["bolsa", "aseo", "industria", "inocuidad"]
     },
     {
@@ -261,7 +261,7 @@
       "precio": 110,
       "unidad": "unidad",
       "unidades_por_caja": 100,
-      "foto": "bolsa-aseo-80x110.jpg",
+      "foto": "bolsa-aseo-80x110.png",
       "tags": ["bolsa", "aseo", "industria", "inocuidad"]
     },
     {
@@ -272,7 +272,7 @@
       "precio": 200,
       "unidad": "unidad",
       "unidades_por_caja": 50,
-      "foto": "bolsa-aseo-90x110.jpg",
+      "foto": "bolsa-aseo-90x110.png",
       "tags": ["bolsa", "aseo", "industria", "inocuidad"]
     }
   ]
