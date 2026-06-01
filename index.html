@@ -8,6 +8,15 @@
   <meta property="og:title" content="Catálogo Verval — Embalaje Industrial">
   <meta property="og:description" content="Explora nuestro catálogo de embalaje industrial. Cotiza directo por WhatsApp.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="theme-color" content="#0f2e1f">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -56,7 +65,19 @@
     }
     .brand {
       display: flex;
+      align-items: center;
+      gap: .85rem;
+    }
+    .brand-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+    }
+    .brand-text {
+      display: flex;
       flex-direction: column;
+      line-height: 1.1;
     }
     .brand-name {
       font-family: 'Fraunces', serif;
@@ -66,10 +87,11 @@
       color: var(--white);
     }
     .brand-sub {
-      font-size: .75rem;
+      font-size: .72rem;
       color: var(--kraft);
       letter-spacing: .08em;
       text-transform: uppercase;
+      margin-top: .15rem;
     }
     .header-actions {
       display: flex;
@@ -100,6 +122,13 @@
       color: var(--cream);
       padding: 3rem 1.5rem 2.5rem;
       text-align: center;
+    }
+    .hero-icon {
+      height: 56px;
+      width: auto;
+      margin: 0 auto 1rem;
+      display: block;
+      opacity: .95;
     }
     .hero h1 {
       font-family: 'Fraunces', serif;
@@ -357,6 +386,12 @@
       text-align: center;
       padding: 2rem 1.5rem;
     }
+    .footer-logo {
+      height: 40px;
+      width: auto;
+      margin-bottom: 1rem;
+      opacity: .9;
+    }
     .footer-links {
       display: flex;
       justify-content: center;
@@ -403,9 +438,13 @@
         grid-template-columns: 1fr;
       }
       .header-inner {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
+      .brand-logo { height: 36px; }
+      .brand-name { font-size: 1.2rem; }
+      .brand-sub { font-size: .65rem; }
       .hero { padding: 2rem 1rem 1.5rem; }
       .hero-stats { gap: 1.2rem; }
       .btn-wa-header span.desk { display: none; }
@@ -427,10 +466,13 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
-      <div class="brand">
-        <span class="brand-name">Verval</span>
-        <span class="brand-sub">Embalaje Industrial</span>
-      </div>
+      <a href="./" class="brand" aria-label="Verval - Inicio" style="text-decoration:none;">
+        <img src="assets/img/logo.png" alt="Verval" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">Verval</span>
+          <span class="brand-sub">Embalaje Industrial</span>
+        </span>
+      </a>
       <div class="header-actions">
         <a href="https://wa.me/56933853926?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20productos%20del%20cat%C3%A1logo." class="btn-wa-header" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
@@ -442,6 +484,7 @@
 
   <!-- HERO -->
   <section class="hero">
+    <img src="assets/img/icon.png" alt="" class="hero-icon" aria-hidden="true">
     <h1>Catálogo de <em>Productos</em></h1>
     <p>Soluciones de embalaje industrial para tu negocio. Cotiza directo por WhatsApp.</p>
     <div class="hero-stats">
@@ -481,6 +524,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
+    <img src="assets/img/logo.png" alt="Verval" class="footer-logo">
     <div class="footer-links">
       <a href="mailto:ventas@empresasverval.cl">ventas@empresasverval.cl</a>
       <a href="https://wa.me/56933853926" target="_blank" rel="noopener">WhatsApp</a>
