@@ -1,4 +1,43 @@
 {
+  "destacado": {
+    "id": "020",
+    "eyebrow": "Producto estrella",
+    "nombre": "Bolsas de Vacío",
+    "bajada": "Nuestra línea más vendida. Seis medidas para envasar, conservar y despachar sin que el producto pierda frescura.",
+    "foto": "bolsa-vacio.png",
+    "beneficios": [
+      {
+        "titulo": "Sella sin aire",
+        "texto": "Al extraer el oxígeno se frena la oxidación y el desarrollo bacteriano."
+      },
+      {
+        "titulo": "Más vida útil",
+        "texto": "Conserva sabor, color y textura del producto por mucho más tiempo."
+      },
+      {
+        "titulo": "Aptas para congelado",
+        "texto": "Resisten el frío y evitan las quemaduras por congelación."
+      },
+      {
+        "titulo": "Ordena tu cámara",
+        "texto": "Compacta el producto y aprovecha mejor el espacio de frío y vitrina."
+      }
+    ],
+    "nota_medidas": "Estas son nuestras 6 medidas de línea. Trabajamos y cotizamos medidas adicionales.",
+    "medidas_extra": {
+      "titulo": "¿Necesitas otra medida?",
+      "texto": "No te quedes con estas 6. Cotizamos y conseguimos otras medidas según lo que necesites envasar.",
+      "cta": "Preguntar por más medidas"
+    },
+    "medidas": [
+      { "medida": "14x21", "ancho": 14, "alto": 21, "ideal": "Porciones individuales, quesos y embutidos laminados." },
+      { "medida": "15x20", "ancho": 15, "alto": 20, "ideal": "Snacks, frutos secos, condimentos y granos." },
+      { "medida": "15x30", "ancho": 15, "alto": 30, "ideal": "Longanizas, salmón en porciones y verduras." },
+      { "medida": "20x30", "ancho": 20, "alto": 30, "ideal": "Cortes de carne, pollo trozado y mariscos." },
+      { "medida": "30x40", "ancho": 30, "alto": 40, "ideal": "Piezas grandes, quesos enteros y congelados." },
+      { "medida": "40x60", "ancho": 40, "alto": 60, "ideal": "Cortes mayoristas y volumen para cámara de frío." }
+    ]
+  },
   "productos": [
     {
       "id": "001",
@@ -211,14 +250,15 @@
     },
     {
       "id": "020",
-      "nombre": "Bolsa Vacío",
+      "nombre": "Bolsas de Vacío",
       "categoria": "Bolsas Plásticas",
-      "descripcion": "Las bolsas para envasar al vacío son un tipo de envase que permite extraer el aire de su interior, creando un entorno sellado que protege los productos alimenticios y otros objetos de la exposición al oxígeno y la humedad. Medidas: 14x21, 15x20, 15x30, 20x30, 30x40, 40x60.",
+      "descripcion": "Permiten extraer el aire del envase y crear un sellado que protege el producto del oxígeno y la humedad. Disponibles en 6 medidas: 14x21, 15x20, 15x30, 20x30, 30x40 y 40x60.",
       "precio": null,
       "unidad": "unidad",
       "unidades_por_caja": null,
       "foto": "bolsa-vacio.png",
-      "tags": ["bolsa", "vacío", "sellado", "alimentos", "conservación"]
+      "es_destacado": true,
+      "tags": ["bolsa", "vacío", "sellado", "alimentos", "conservación", "envasado", "congelado"]
     },
     {
       "id": "021",

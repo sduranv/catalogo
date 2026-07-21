@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Verval — Embalaje Industrial</title>
-  <meta name="description" content="Catálogo de productos de embalaje industrial Empresas Verval. Bolsas, rollos, bandejas, guantes y más. Cotiza por WhatsApp.">
-  <meta property="og:title" content="Catálogo Verval — Embalaje Industrial">
-  <meta property="og:description" content="Explora nuestro catálogo de embalaje industrial. Cotiza directo por WhatsApp.">
+  <title>Bolsas de Vacío — 6 medidas y más a pedido | Verval Embalaje Industrial</title>
+  <meta name="description" content="Bolsas para envasar al vacío en 6 medidas de línea: 14x21, 15x20, 15x30, 20x30, 30x40 y 40x60, y cotizamos otras medidas a pedido. Conservan, congelan y alargan la vida útil de tus productos. Cotiza por WhatsApp con Empresas Verval.">
+  <meta property="og:title" content="Bolsas de Vacío — 6 medidas y más a pedido | Verval">
+  <meta property="og:description" content="Envasa al vacío y alarga la vida útil de tus productos. 6 medidas de línea y otras a pedido. Cotiza directo por WhatsApp.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image" content="img/editadas/bolsa-vacio.png">
   <meta name="theme-color" content="#0f2e1f">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -166,6 +166,339 @@
       text-transform: uppercase;
       letter-spacing: .06em;
       opacity: .7;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: .75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--kraft);
+      color: var(--pine);
+      padding: .8rem 1.6rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .92rem;
+      transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn-primary:hover {
+      background: var(--kraft-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(200,168,130,.35);
+    }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: transparent;
+      color: var(--cream);
+      border: 1.5px solid rgba(245,241,234,.35);
+      padding: .8rem 1.6rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .92rem;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--cream);
+      background: rgba(245,241,234,.08);
+    }
+
+    /* PRODUCTO ESTRELLA — BOLSAS DE VACÍO */
+    .featured {
+      background: linear-gradient(180deg, #ffffff 0%, var(--cream) 100%);
+      padding: 3.5rem 1.5rem 3rem;
+      border-bottom: 1px solid rgba(15,46,31,.08);
+    }
+    .featured-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .featured-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: var(--rust);
+      color: var(--white);
+      font-size: .68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      padding: .35rem .9rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+    .featured-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 5.5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--pine);
+      line-height: 1.1;
+      margin-bottom: .85rem;
+    }
+    .featured-lead {
+      font-size: 1.05rem;
+      color: #4a4a4a;
+      max-width: 46ch;
+      margin-bottom: 1.5rem;
+    }
+    .featured-photo-wrap {
+      aspect-ratio: 4 / 3;
+      background:
+        radial-gradient(ellipse at 50% 92%, rgba(15,46,31,.10), transparent 62%),
+        linear-gradient(180deg, #fdfcf9 0%, #f2ece1 100%);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+    }
+    .featured-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 1.5rem;
+      mix-blend-mode: multiply;
+    }
+
+    /* BENEFICIOS */
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.75rem;
+    }
+    .benefit {
+      background: var(--white);
+      border: 1px solid rgba(15,46,31,.08);
+      border-left: 3px solid var(--kraft);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+    }
+    .benefit-title {
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--pine);
+      margin-bottom: .25rem;
+    }
+    .benefit-text {
+      font-size: .82rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* MEDIDAS */
+    .sizes-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+    .sizes-head h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--pine);
+    }
+    .sizes-head span {
+      font-size: .85rem;
+      color: #777;
+    }
+    .sizes-note {
+      font-size: .88rem;
+      color: var(--pine);
+      background: rgba(200,168,130,.18);
+      border-left: 3px solid var(--kraft);
+      border-radius: 0 8px 8px 0;
+      padding: .65rem .95rem;
+      margin-bottom: 1.25rem;
+    }
+    .sizes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 1.1rem;
+      /* px por cm: todas las siluetas comparten escala, así se comparan entre sí */
+      --bag-scale: 2px;
+    }
+    .size-card {
+      background: var(--white);
+      border: 1px solid rgba(15,46,31,.09);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.35rem 1.25rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+    }
+    .size-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--kraft);
+    }
+    /* silueta proporcional: cada bolsa se dibuja a escala real entre sí */
+    .bag-stage {
+      height: 132px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .bag {
+      position: relative;
+      width: calc(var(--w) * var(--bag-scale));
+      height: calc(var(--h) * var(--bag-scale));
+      background: linear-gradient(135deg, rgba(200,168,130,.30) 0%, rgba(200,168,130,.14) 45%, rgba(15,46,31,.10) 100%);
+      border: 1.5px solid rgba(15,46,31,.22);
+      border-radius: 3px 3px 6px 6px;
+    }
+    .bag::before {
+      content: "";
+      position: absolute;
+      top: 5px; left: 0; right: 0;
+      height: 1px;
+      background: repeating-linear-gradient(90deg, rgba(15,46,31,.30) 0 3px, transparent 3px 6px);
+    }
+    .bag::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 22%;
+      width: 18%;
+      background: linear-gradient(90deg, rgba(255,255,255,.55), rgba(255,255,255,0));
+    }
+    .size-num {
+      font-family: 'Fraunces', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--pine);
+      line-height: 1;
+      letter-spacing: -.01em;
+    }
+    .size-unit {
+      font-family: 'Manrope', sans-serif;
+      font-size: .8rem;
+      font-weight: 500;
+      color: #999;
+    }
+    .size-ideal {
+      font-size: .8rem;
+      color: #666;
+      line-height: 1.5;
+      margin: .7rem 0 1rem;
+      flex: 1;
+    }
+    .size-price {
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--rust);
+      margin-bottom: .75rem;
+    }
+    .btn-wa-size {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .4rem;
+      background: #25d366;
+      color: var(--white);
+      padding: .6rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .82rem;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-wa-size:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(37,211,102,.35);
+    }
+
+    /* TARJETA "MÁS MEDIDAS" — cierra la grilla para que nadie asuma que solo hay 6 */
+    .size-card.size-more {
+      background: linear-gradient(160deg, rgba(200,168,130,.16) 0%, rgba(200,168,130,.06) 100%);
+      border: 2px dashed var(--kraft);
+      box-shadow: none;
+      justify-content: center;
+    }
+    .size-card.size-more:hover {
+      border-color: var(--rust);
+      border-style: solid;
+      background: linear-gradient(160deg, rgba(200,168,130,.24) 0%, rgba(200,168,130,.10) 100%);
+    }
+    .size-more .bag-stage { align-items: center; }
+    .more-mark {
+      font-family: 'Fraunces', serif;
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: var(--kraft);
+      line-height: 1;
+    }
+    .more-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--pine);
+      line-height: 1.2;
+      margin-bottom: .4rem;
+    }
+
+    /* ASESORÍA */
+    .advice {
+      margin-top: 1.75rem;
+      background: var(--pine);
+      color: var(--cream);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .advice-text strong {
+      font-family: 'Fraunces', serif;
+      font-size: 1.15rem;
+      display: block;
+      margin-bottom: .2rem;
+    }
+    .advice-text span {
+      font-size: .88rem;
+      opacity: .8;
+    }
+
+    /* SEPARADOR RESTO DEL CATÁLOGO */
+    .catalog-head {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 0;
+      text-align: center;
+    }
+    .catalog-head h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--pine);
+      margin-bottom: .35rem;
+    }
+    .catalog-head p {
+      font-size: .92rem;
+      color: #777;
     }
 
     /* FILTERS */
@@ -368,6 +701,33 @@
       box-shadow: 0 4px 15px rgba(37,211,102,.35);
     }
 
+    /* TARJETA DEL DESTACADO DENTRO DEL GRID */
+    .card.is-featured {
+      border: 2px solid var(--kraft);
+    }
+    .card.is-featured .card-cat {
+      background: var(--rust);
+      color: var(--white);
+    }
+    .btn-anchor {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--pine);
+      color: var(--white);
+      padding: .55rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .8rem;
+      white-space: nowrap;
+      transition: transform .2s, background .2s;
+    }
+    .btn-anchor:hover {
+      background: var(--pine-light);
+      transform: translateY(-1px);
+    }
+
     /* EMPTY STATE */
     .empty {
       text-align: center;
@@ -448,16 +808,66 @@
       .hero { padding: 2rem 1rem 1.5rem; }
       .hero-stats { gap: 1.2rem; }
       .btn-wa-header span.desk { display: none; }
+      .nav-link { display: none; }
+
+      .featured { padding: 2.25rem 1rem 2.25rem; }
+      .featured-top {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .featured-photo-wrap { order: -1; aspect-ratio: 16 / 10; }
+      /* dos medidas por fila: se comparan de un vistazo */
+      .sizes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .75rem;
+        --bag-scale: 1.5px;
+      }
+      .size-card { padding: 1rem .75rem .9rem; }
+      .bag-stage { height: 100px; }
+      .size-num { font-size: 1.45rem; }
+      .size-ideal { font-size: .74rem; }
+      .btn-wa-size { font-size: .75rem; padding: .55rem .5rem; }
+      .advice { flex-direction: column; text-align: center; }
     }
 
+    @media (max-width: 360px) {
+      .sizes-grid { grid-template-columns: 1fr; }
+    }
+
+    /* NAV */
+    .nav-link {
+      color: var(--kraft);
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 600;
+      padding: .5rem .25rem;
+      border-bottom: 2px solid transparent;
+      transition: color .2s, border-color .2s;
+    }
+    .nav-link:hover {
+      color: var(--white);
+      border-color: var(--kraft);
+    }
+
+    html { scroll-behavior: smooth; }
+    /* el header es sticky: evita que la sección quede tapada al anclar */
+    #bolsas-vacio, #catalogo, #medidas { scroll-margin-top: 90px; }
+
     /* ANIMATIONS */
-    .card {
+    /* se anima `translate` y no `transform`, para no pisar el lift del :hover */
+    .card, .size-card {
       opacity: 0;
-      transform: translateY(20px);
+      translate: 0 20px;
       animation: fadeUp .4s ease forwards;
     }
     @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; translate: 0 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card, .size-card { opacity: 1; translate: none; animation: none; }
     }
   </style>
 </head>
@@ -474,7 +884,9 @@
         </span>
       </a>
       <div class="header-actions">
-        <a href="https://wa.me/56933853926?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20productos%20del%20cat%C3%A1logo." class="btn-wa-header" target="_blank" rel="noopener">
+        <a href="#bolsas-vacio" class="nav-link">Bolsas de Vacío</a>
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="https://wa.me/56933853926?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20bolsas%20de%20vac%C3%ADo." class="btn-wa-header" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
           <span class="desk">Cotizar</span>
         </a>
@@ -485,23 +897,38 @@
   <!-- HERO -->
   <section class="hero">
     <img src="assets/img/icon.png" alt="" class="hero-icon" aria-hidden="true">
-    <h1>Catálogo de <em>Productos</em></h1>
-    <p>Soluciones de embalaje industrial para tu negocio. Cotiza directo por WhatsApp.</p>
+    <h1>Bolsas de <em>Vacío</em></h1>
+    <p>Envasa al vacío y alarga la vida útil de tus productos. Seis medidas de línea para carnes, quesos y congelados &mdash; y cotizamos otras a pedido.</p>
+    <div class="hero-cta">
+      <a href="#bolsas-vacio" class="btn-primary">Ver las 6 medidas</a>
+      <a href="#catalogo" class="btn-ghost">Ver todo el catálogo</a>
+    </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">25+</div>
-        <div class="stat-label">Productos</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">7</div>
-        <div class="stat-label">Categorías</div>
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Medidas</div>
       </div>
       <div class="stat">
         <div class="stat-num">24h</div>
         <div class="stat-label">Respuesta</div>
       </div>
+      <div class="stat">
+        <div class="stat-num">25+</div>
+        <div class="stat-label">Productos</div>
+      </div>
     </div>
   </section>
+
+  <!-- PRODUCTO ESTRELLA: BOLSAS DE VACÍO -->
+  <section class="featured" id="bolsas-vacio">
+    <div class="featured-inner" id="featuredInner"></div>
+  </section>
+
+  <!-- RESTO DEL CATÁLOGO -->
+  <div class="catalog-head" id="catalogo">
+    <h2>Todo nuestro catálogo</h2>
+    <p>Embalaje, bolsas, papel y bandejas para tu negocio.</p>
+  </div>
 
   <!-- FILTERS -->
   <div class="filters">
@@ -541,14 +968,96 @@
   <script>
     const WA = '56933853926';
 
+    const WA_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>';
+
     fetch('catalogo.json')
       .then(r => r.json())
-      .then(data => init(data.productos))
+      .then(data => {
+        if (data.destacado) renderFeatured(data.destacado);
+        init(data.productos);
+      })
       .catch(() => {
         document.getElementById('grid').innerHTML = '<p style="text-align:center;padding:2rem;color:#888;">Error cargando el catálogo.</p>';
       });
 
+    // Cae a la imagen original y, si tampoco existe, a un placeholder SVG.
+    function imgFallback(foto) {
+      return `this.onerror=null;this.src='img/originales/${foto}';this.onerror=()=>{this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%230f2e1f%22><path d=%22M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z%22/></svg>';};`;
+    }
+
+    function renderFeatured(d) {
+      const beneficios = d.beneficios.map(b => `
+        <div class="benefit">
+          <div class="benefit-title">${b.titulo}</div>
+          <div class="benefit-text">${b.texto}</div>
+        </div>`).join('');
+
+      const medidas = d.medidas.map((m, i) => {
+        const msg = encodeURIComponent(`Hola, me interesa cotizar Bolsas de Vacío medida ${m.medida} cm. ¿Podrían darme precio y disponibilidad?`);
+        return `
+          <article class="size-card" style="animation-delay:${i * .05}s">
+            <div class="bag-stage">
+              <div class="bag" style="--w:${m.ancho};--h:${m.alto}" role="img" aria-label="Bolsa de ${m.medida} centímetros"></div>
+            </div>
+            <div class="size-num">${m.ancho}&times;${m.alto} <span class="size-unit">cm</span></div>
+            <p class="size-ideal">${m.ideal}</p>
+            <div class="size-price">Consultar precio</div>
+            <a href="https://wa.me/${WA}?text=${msg}" class="btn-wa-size" target="_blank" rel="noopener">
+              ${WA_ICON} Cotizar ${m.medida}
+            </a>
+          </article>`;
+      }).join('');
+
+      const asesoriaMsg = encodeURIComponent('Hola, necesito ayuda para elegir la medida de bolsa de vacío. Les cuento qué producto envaso:');
+      const otraMedidaMsg = encodeURIComponent('Hola, necesito bolsas de vacío en una medida distinta a las 6 publicadas. ¿Me pueden cotizar la medida ___ x ___ cm?');
+
+      const extra = d.medidas_extra ? `
+        <article class="size-card size-more" style="animation-delay:${d.medidas.length * .05}s">
+          <div class="bag-stage"><span class="more-mark">+</span></div>
+          <div class="more-title">${d.medidas_extra.titulo}</div>
+          <p class="size-ideal">${d.medidas_extra.texto}</p>
+          <a href="https://wa.me/${WA}?text=${otraMedidaMsg}" class="btn-wa-size" target="_blank" rel="noopener">
+            ${WA_ICON} ${d.medidas_extra.cta}
+          </a>
+        </article>` : '';
+
+      document.getElementById('featuredInner').innerHTML = `
+        <div class="featured-top">
+          <div>
+            <span class="eyebrow">${d.eyebrow}</span>
+            <h2 class="featured-title">${d.nombre}</h2>
+            <p class="featured-lead">${d.bajada}</p>
+            <a href="#medidas" class="btn-primary" style="background:var(--pine);color:var(--white);">Elegir mi medida</a>
+          </div>
+          <div class="featured-photo-wrap">
+            <img src="img/editadas/${d.foto}" alt="${d.nombre}" class="featured-photo" onerror="${imgFallback(d.foto)}">
+          </div>
+        </div>
+
+        <div class="benefits">${beneficios}</div>
+
+        <div class="sizes-head" id="medidas">
+          <h3>Medidas que trabajamos</h3>
+          <span>Siluetas a escala real entre sí &mdash; compara antes de elegir</span>
+        </div>
+        ${d.nota_medidas ? `<p class="sizes-note">${d.nota_medidas}</p>` : ''}
+        <div class="sizes-grid">${medidas}${extra}</div>
+
+        <div class="advice">
+          <div class="advice-text">
+            <strong>¿No encuentras tu medida? ¡Pregúntanos!</strong>
+            <span>Cuéntanos qué producto envasas y te recomendamos la bolsa correcta. También cotizamos medidas fuera de las publicadas.</span>
+          </div>
+          <a href="https://wa.me/${WA}?text=${asesoriaMsg}" class="btn-primary" target="_blank" rel="noopener">
+            ${WA_ICON} Pedir asesoría
+          </a>
+        </div>`;
+    }
+
     function init(productos) {
+      // el destacado abre el grid, aunque en el JSON esté a mitad de la lista
+      productos = [...productos].sort((a, b) => (b.es_destacado ? 1 : 0) - (a.es_destacado ? 1 : 0));
+
       const categories = [...new Set(productos.map(p => p.categoria))];
       renderFilters(categories);
 
@@ -623,12 +1132,18 @@
         const waMsg = encodeURIComponent(`Hola, me interesa cotizar: ${p.nombre}. ¿Podrían darme información de precios y disponibilidad?`);
 
         const imgEdit = `img/editadas/${p.foto}`;
-        const imgOrig = `img/originales/${p.foto}`;
-        const fallback = `this.onerror=null;this.src='${imgOrig}';this.onerror=()=>{this.classList.add('placeholder');this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%230f2e1f%22><path d=%22M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z%22/></svg>';};`;
+        const fallback = imgFallback(p.foto);
+
+        // El destacado ya tiene su propia sección arriba: la tarjeta lleva de vuelta ahí.
+        const cta = p.es_destacado
+          ? `<a href="#bolsas-vacio" class="btn-anchor">Ver las 6 medidas &uarr;</a>`
+          : `<a href="https://wa.me/${WA}?text=${waMsg}" class="btn-wa" target="_blank" rel="noopener">
+                ${WA_ICON} Cotizar
+              </a>`;
 
         return `
-          <article class="card" style="animation-delay:${i * .05}s">
-            <div class="card-cat">${p.categoria}</div>
+          <article class="card${p.es_destacado ? ' is-featured' : ''}" style="animation-delay:${i * .05}s">
+            <div class="card-cat">${p.es_destacado ? '&#9733; Producto estrella' : p.categoria}</div>
             <div class="card-img-wrap">
               <img class="card-img" src="${imgEdit}" alt="${p.nombre}" loading="lazy" onerror="${fallback}">
             </div>
@@ -644,10 +1159,7 @@
                 ${precio}
                 ${unidades ? `<div>${unidades}</div>` : ''}
               </div>
-              <a href="https://wa.me/${WA}?text=${waMsg}" class="btn-wa" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.237 0-4.308-.744-5.974-1.998l-.418-.312-2.645.887.887-2.645-.312-.418A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
-                Cotizar
-              </a>
+              ${cta}
             </div>
           </article>`;
       }).join('');
